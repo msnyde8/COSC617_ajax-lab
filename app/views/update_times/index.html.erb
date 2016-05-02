@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>The current time is: </h1>
+<div id="ajax_time">
+  <ol>
+    <%= render :partial=>"update_times/form"%>
+  </ol>
+</div>
+<br>
+
+<%= link_to 'Update', new_update_time_path, :remote => true, :class => 'btn btn-default' %>
